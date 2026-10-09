@@ -1,0 +1,7 @@
+# 此公开仓库仅跟踪发行说明；安装包和 GPU 包通过 Release assets 提供。
+*
+!.gitignore
+!README.md
+!releases/
+!releases/1.0.0.md
+!releases/1.1.0.md
