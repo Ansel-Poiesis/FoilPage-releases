@@ -2,7 +2,7 @@
 
 下载视频、在本地转写，整理为可编辑的文稿。支持抖音、B 站、YouTube 与本地媒体。
 
-本仓库提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/shengjian-releases](https://github.com/Ansel-Poiesis/shengjian-releases)。
+源码在私有仓库维护，本仓库仅提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/shengjian-releases](https://github.com/Ansel-Poiesis/shengjian-releases)。
 
 ## 安装与首次使用
 
