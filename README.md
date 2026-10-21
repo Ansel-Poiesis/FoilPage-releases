@@ -6,7 +6,7 @@
 
 ## 安装与首次使用
 
-1. 从 [Releases](https://github.com/Ansel-Poiesis/shengjian-releases/releases) 选择正式版，下载 `ShengJian-Setup-1.0.0.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
+1. 从 [最新正式版](https://github.com/Ansel-Poiesis/shengjian-releases/releases/latest) 下载 `ShengJian-Setup-1.1.0.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
 2. 打开声笺，在「准备」依次完成邮箱登录、环境检测与保存目录设置、本地模型下载。
 3. 完成准备后进入「任务」。可粘贴视频链接，也可在「导入媒体」拖入本地视频。
 
@@ -42,7 +42,9 @@
 
 ## 更新渠道
 
-正式版 **1.0.0**：[更新说明](releases/1.0.0.md)。测试版 **1.1.0**：[测试说明](releases/1.1.0.md)。默认更新仅跟随正式版；测试版需要主动选择，不进入正式版的默认更新通知。
+正式版 **1.1.0**：[下载](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.1.0-formal) · [更新说明](releases/1.1.0-formal.md)。测试版 **1.2.0**：[下载](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.2.0) · [测试说明](releases/1.2.0.md)。默认更新仅跟随正式版；测试版需要主动选择，不进入正式版的默认更新通知。
+
+历史 `v1.1.0` 为旧测试发行，保留原有记录。当前正式版使用唯一标签 `v1.1.0-formal`；从旧 1.1.0 测试版切换时，请手动重载浏览器扩展一次，再刷新视频页。每次发行均附 `SHA256SUMS.txt`，可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件路径` 校验。
 
 应用中的「设置 → 关于 → 通知与更新」可查看更新记录。问题反馈请提交到 [Issues](https://github.com/Ansel-Poiesis/shengjian-releases/issues)，附版本、系统与复现步骤。
 
