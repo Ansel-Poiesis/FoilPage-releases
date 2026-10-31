@@ -1,10 +1,10 @@
-# 视频的二向箔 · Clip to Page
+# 视频的二向箔 · FoilPage
 
 在本机下载与转写视频，将内容整理为可阅读、可编辑的文稿。支持抖音、B 站、YouTube 与本地媒体。
 
 源码在私有仓库维护，本仓库仅提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/shengjian-releases](https://github.com/Ansel-Poiesis/shengjian-releases)。
 
-产品中文名为「视频的二向箔」，英文名为 Clip to Page。正式版仍为 1.1.0，最新测试版为 [1.3.4](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.3.4)。
+产品中文名为「视频的二向箔」，英文名为 FoilPage（1.3.4 曾用名 Clip to Page，因搜索辨识度不足更名）。正式版仍为 1.1.0，最新测试版为 [1.3.5](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.3.5)。
 
 ## 安装与首次使用
 
@@ -12,7 +12,7 @@
 2. 打开二向箔，在「准备」依次完成邮箱登录、环境检测与保存目录设置、本地模型下载。
 3. 完成准备后进入「任务」。可粘贴视频链接，也可在「导入媒体」拖入本地视频。
 
-安装包包含 CPU 转写所需的运行组件。NVIDIA GPU 加速包为独立可选下载：选择与桌面版本匹配的 GPU 加速包；1.3.4 测试版文件为 `Clip-to-Page-GPU-Pack-1.3.4.zip`，在「准备 → 环境检测 → 安装 GPU 加速包」中选取，完成后重启。CPU 用户无需下载该包。
+安装包包含 CPU 转写所需的运行组件。NVIDIA GPU 加速包为独立可选下载：选择与桌面版本匹配的 GPU 加速包；1.3.4 测试版文件为 `FoilPage-GPU-Pack-1.3.4.zip`，在「准备 → 环境检测 → 安装 GPU 加速包」中选取，完成后重启。CPU 用户无需下载该包。
 
 ## 试用、解锁与云端积分
 
