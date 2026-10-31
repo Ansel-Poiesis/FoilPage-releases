@@ -4,11 +4,11 @@
 
 源码在私有仓库维护，本仓库仅提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/shengjian-releases](https://github.com/Ansel-Poiesis/shengjian-releases)。
 
-产品中文名为「视频的二向箔」，英文名为 FoilPage（1.3.4 曾用名 Clip to Page，因搜索辨识度不足更名）。正式版仍为 1.1.0，最新测试版为 [1.3.5](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.3.5)。
+产品中文名为「视频的二向箔」，英文名为 FoilPage（1.3.4 曾用名 Clip to Page，因搜索辨识度不足更名）。**最新正式版为 [1.4.0](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.4.0-formal)（2026-10-31）——本地功能登录即用，取消解锁付费**；测试版为 [1.3.5](https://github.com/Ansel-Poiesis/shengjian-releases/releases/tag/v1.3.5)。
 
 ## 安装与首次使用
 
-1. 从 [最新正式版](https://github.com/Ansel-Poiesis/shengjian-releases/releases/latest) 下载 `ShengJian-Setup-1.1.0.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
+1. 从 [最新正式版](https://github.com/Ansel-Poiesis/shengjian-releases/releases/latest) 下载 `FoilPage-Setup-1.4.0.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
 2. 打开二向箔，在「准备」依次完成邮箱登录、环境检测与保存目录设置、本地模型下载。
 3. 完成准备后进入「任务」。可粘贴视频链接，也可在「导入媒体」拖入本地视频。
 
