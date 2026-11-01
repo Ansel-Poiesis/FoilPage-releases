@@ -4,15 +4,15 @@
 
 源码在私有仓库维护，本仓库仅提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/FoilPage-releases](https://github.com/Ansel-Poiesis/FoilPage-releases)。
 
-项目名称统一为 FoilPage。**最新正式版为 [1.3.7](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.7-formal)（2026-11-01）——本地功能登录即用，取消解锁付费**；测试版为 [1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)。
+项目名称统一为 FoilPage。**最新正式版为 [1.3.8](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.8-formal)（2026-11-01）——本地功能登录即用，取消解锁付费**；测试版为 [1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)。
 
 ## 安装与首次使用
 
-1. 从 [最新正式版](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/latest) 下载 `FoilPage-Setup-1.3.7.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
+1. 从 [最新正式版](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/latest) 下载 `FoilPage-Setup-1.3.8.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
 2. 打开 FoilPage，在「准备」依次完成邮箱登录、环境检测与保存目录设置、本地模型下载。
 3. 完成准备后进入「任务」。可粘贴视频链接，也可在「导入媒体」拖入本地视频。
 
-安装包包含 CPU 转写所需的运行组件。NVIDIA GPU 加速包为独立可选下载：选择与桌面版本匹配的 GPU 加速包；1.3.7 正式版文件为 `FoilPage-GPU-Pack-1.3.7.zip`，在「准备 → 环境检测 → 安装 GPU 加速包」中选取，完成后重启。CPU 用户无需下载该包。
+安装包包含 CPU 转写所需的运行组件。NVIDIA GPU 加速包为独立可选下载：选择与桌面版本匹配的 GPU 加速包；1.3.8 正式版文件为 `FoilPage-GPU-Pack-1.3.8.zip`，在「准备 → 环境检测 → 安装 GPU 加速包」中选取，完成后重启。CPU 用户无需下载该包。
 
 ### 安装提示：SmartScreen 与完整性校验
 
@@ -35,7 +35,7 @@
 
 首次打开 FoilPage 的「浏览器」页，点击「打开扩展目录」。在 Chrome／Edge 的扩展管理页启用开发者模式，选择「加载已解压的扩展」，加载该固定目录。
 
-默认目录为 `%LOCALAPPDATA%\Programs\VideoToArticle\browser-extension`；自定义安装时以 FoilPage 显示的目录为准。路径中的 `VideoToArticle` 是本产品早期的项目名，安装目录沿用至今；统一更名需要处理老用户的安装与数据迁移，将在后续版本完成。该目录就是当前 FoilPage 正式版的安装目录，功能与更新不受影响。随后点击 FoilPage 里的「允许连接」，在两分钟内打开浏览器扩展并完成一键配置。
+默认目录为 `%LOCALAPPDATA%\Programs\FoilPage\browser-extension`（1.3.8 前安装的为 `...\Programs\VideoToArticle\browser-extension`，原地升级不改变原目录）；自定义安装时以 FoilPage 显示的目录为准。1.3.8 起安装目录、程序名（任务管理器中的 FoilPage-Desktop）与数据目录统一为 FoilPage，旧安装升级后自动完成数据迁移，无需手动搬移。随后点击 FoilPage 里的「允许连接」，在两分钟内打开浏览器扩展并完成一键配置。
 
 以后桌面升级会更新同一目录的扩展文件，扩展在任务完成且弹窗关闭后空闲重载，已打开的视频页需刷新。若之前加载了另一份扩展副本，请先改为当前安装目录；没有自重载能力的旧扩展需要手动重载一次。此更新方式不依赖 Chrome 商店。
 
@@ -45,7 +45,7 @@
 
 ## 更新渠道
 
-正式版/latest 为 **1.3.7**（[v1.3.7-formal](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.7-formal)）；测试版为 **1.3.5**（[v1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)）。默认更新仅跟随正式版；测试版需要主动选择，不进入正式版的默认更新通知。此前的 1.3.6、1.3.4、1.3.2、1.2.0 与 1.1.0 发行说明只记录各自当时状态。
+正式版/latest 为 **1.3.8**（[v1.3.8-formal](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.8-formal)）；测试版为 **1.3.5**（[v1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)）。默认更新仅跟随正式版；测试版需要主动选择，不进入正式版的默认更新通知。此前的 1.3.7、1.3.6、1.3.4、1.3.2、1.2.0 与 1.1.0 发行说明只记录各自当时状态。
 
 `v1.4.0-formal` 已撤回并作废，编号不复用；历史标签与发行资产保留。每次发行均附 `SHA256SUMS.txt`，可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件路径` 校验。
 
