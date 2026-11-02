@@ -1,7 +1,7 @@
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/hero-en-dark-v4.svg"><img src="assets/home/hero-en-light-v4.svg" alt="FoilPage — Turn video into text you can revisit." width="1000"></picture></p>
 
 <h1 align="center">FoilPage</h1>
-<p align="center"><strong>Video download, local transcription, and an editable library for Windows.</strong></p>
+<p align="center"><strong>Local transcription in your browser. A video-to-text workspace for Windows.</strong></p>
 <p align="center"><a href="https://foilpage.early-snipe-7202.chatgpt.site/?lang=en"><strong>Visit the website</strong></a> · <a href="https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh"><strong>简体中文官网</strong></a></p>
 
 <p align="center">
@@ -15,7 +15,8 @@
 
 FoilPage brings video download, on-device transcription, and document editing into one Windows workspace. Start from a supported Douyin, Bilibili, or YouTube link, or import local video and audio. Keep the original transcript and refine a separate draft when you need one.
 
-- **Work locally.** Sign in and transcribe with a downloaded local model. CPU support is included; a matching NVIDIA GPU pack is optional.
+- **Try it online.** [Transcribe a local recording in your browser](https://foilpage.early-snipe-7202.chatgpt.site/#transcribe), without installation or an account. Whisper Tiny runs on your device; export TXT or SRT. First use downloads the model. Short recordings up to 10 minutes are supported; review the output for errors.
+- **Work locally on Windows.** Sign in and transcribe with a downloaded local model. CPU support is included; a matching NVIDIA GPU pack is optional.
 - **Build a useful library.** Search documents, organize them with tags, switch between transcript and edited draft, then edit, copy, or export.
 - **Connect your workflow.** Pair the Chrome / Edge extension, or connect MCP and CLI to the running desktop app.
 - **Choose online processing.** Cleanup and title refinement are optional. Relevant text is sent to the selected service; your own API follows its provider's terms.
@@ -41,10 +42,11 @@ The screenshots use sample content and the development interface. The English in
 | You want to… | Start here |
 | :--- | :--- |
 | Explore FoilPage and switch languages | [Product website](https://foilpage.early-snipe-7202.chatgpt.site/) · [简体中文](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh) |
+| Transcribe without installing software | [Browser transcription](https://foilpage.early-snipe-7202.chatgpt.site/#transcribe) |
 | Download or read published changes | [Releases](https://github.com/Ansel-Poiesis/FoilPage-releases/releases) |
 | Read detailed installation instructions | [Setup guide](docs/guide.md) |
 | Report a problem or suggest an improvement | [Issues](https://github.com/Ansel-Poiesis/FoilPage-releases/issues) |
 
-The website is the product guide; media processing and local library access currently happen in the Windows app. Source code is maintained privately. This repository is the official distribution and feedback entry point.
+The website includes browser-local file transcription. Video downloads, the document library, and article cleanup are Windows app features; the browser tool does not connect to your desktop library. Source code is maintained privately. This repository is the official distribution and feedback entry point.
 
 Use content you are entitled to process and follow the source platforms' terms. Remove private text, account information, keys, and signed media URLs from issue reports. Software and installers © 2026 Ansel-Poiesis. Do not redistribute or bundle installers without permission.

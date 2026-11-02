@@ -1,4 +1,4 @@
-> 现行简体中文官网已上线：[打开 FoilPage 官网](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh)。中英切换在官网内完成；下方保留此前的仓库说明。
+> 现行简体中文官网已上线：[打开 FoilPage 官网](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh)。已支持[浏览器本地转写](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh#transcribe)，免安装、无需账户，媒体不上传。中英切换在官网内完成；下方保留此前的仓库说明。
 
 <p align="right"><a href="README.md">English</a> · 简体中文</p>
 
