@@ -1,52 +1,60 @@
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/hero-en-dark-v4.svg"><img src="assets/home/hero-en-light-v4.svg" alt="FoilPage — Turn video into text you can revisit." width="1000"></picture></p>
+# FoilPage
 
-<h1 align="center">FoilPage</h1>
-<p align="center"><strong>Local transcription in your browser. A video-to-text workspace for Windows.</strong></p>
-<p align="center"><a href="https://foilpage.early-snipe-7202.chatgpt.site/?lang=en"><strong>Visit the website</strong></a> · <a href="https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh"><strong>简体中文官网</strong></a></p>
+在本机下载与转写视频，将内容整理为可阅读、可编辑的文稿。支持抖音、B 站、YouTube 与本地媒体。
 
-<p align="center">
-<a href="https://github.com/Ansel-Poiesis/FoilPage-releases/releases/latest"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/action-download-en-dark-v3.svg"><img src="assets/home/action-download-en-light-v3.svg" alt="Download for Windows" height="44"></picture></a>
-<a href="https://foilpage.early-snipe-7202.chatgpt.site/#start"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/action-guide-en-dark-v3.svg"><img src="assets/home/action-guide-en-light-v3.svg" alt="Setup guide" height="44"></picture></a>
-<a href="https://github.com/Ansel-Poiesis/FoilPage-releases/releases"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/action-releases-en-dark-v3.svg"><img src="assets/home/action-releases-en-light-v3.svg" alt="Release notes" height="44"></picture></a>
-<a href="https://github.com/Ansel-Poiesis/FoilPage-releases/issues"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/home/action-feedback-en-dark-v3.svg"><img src="assets/home/action-feedback-en-light-v3.svg" alt="Feedback" height="44"></picture></a>
-</p>
+源码在私有仓库维护，本仓库仅提供 Windows 安装包与更新说明。官方发行入口：[Ansel-Poiesis/FoilPage-releases](https://github.com/Ansel-Poiesis/FoilPage-releases)。
 
-## Keep the words. Keep working with them.
+项目名称统一为 FoilPage。**最新正式版为 [1.3.11](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.11-formal)（2026-11-03）——本地功能登录即用，取消解锁付费**；测试版为 [1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)。
 
-FoilPage brings video download, on-device transcription, and document editing into one Windows workspace. Start from a supported Douyin, Bilibili, or YouTube link, or import local video and audio. Keep the original transcript and refine a separate draft when you need one.
+## 安装与首次使用
 
-- **Try it online.** [Open the browser workspace](https://foilpage.early-snipe-7202.chatgpt.site/app.html), without installation. Local transcription needs no account; the account window connects to your existing FoilPage email account. Whisper Tiny runs on your device; export TXT or SRT. First use downloads the model. Short recordings up to 10 minutes are supported; review the output for errors.
-- **Work locally on Windows.** Sign in and transcribe with a downloaded local model. CPU support is included; a matching NVIDIA GPU pack is optional.
-- **Build a useful library.** Search documents, organize them with tags, switch between transcript and edited draft, then edit, copy, or export.
-- **Connect your workflow.** Pair the Chrome / Edge extension, or connect MCP and CLI to the running desktop app.
-- **Choose online processing.** Cleanup and title refinement are optional. Relevant text is sent to the selected service; your own API follows its provider's terms.
+1. 从 [最新正式版](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/latest) 下载 `FoilPage-Setup-1.3.11.exe` 并安装。支持 Windows 10 1809 及以上、Windows 11 的 64 位系统，无需安装 Python 或 Node.js。
+2. 打开 FoilPage，在「准备」依次完成邮箱登录、环境检测与保存目录设置、本地模型下载。
+3. 完成准备后进入「任务」。可粘贴视频链接，也可在「导入媒体」拖入本地视频。
 
-Local transcription does not upload media or transcripts and does not consume hosted cloud credits. Setup, account verification, and model downloads need a network connection. Platform downloads depend on the source, browser sign-in, and network conditions.
+安装包包含 CPU 转写所需的运行组件。NVIDIA GPU 加速包为独立可选下载：选择与桌面版本匹配的 GPU 加速包；1.3.11 正式版文件为 `FoilPage-GPU-Pack-1.3.11.zip`，在「准备 → 环境检测 → 安装 GPU 加速包」中选取，完成后重启。CPU 用户无需下载该包。
 
-## Light and dark
+### 安装提示：SmartScreen 与完整性校验
 
-<p align="center"><a href="https://foilpage.early-snipe-7202.chatgpt.site/#workspace"><img src="assets/home/workspace-en-light-v3.png" alt="Light · White Rock — English development interface with sample content" width="400"></a> <a href="https://foilpage.early-snipe-7202.chatgpt.site/#workspace"><img src="assets/home/workspace-en-dark-v3.png" alt="Dark — English development interface with sample content" width="400"></a></p>
+安装包当前未配置 Windows 代码签名（Authenticode），首次运行 `FoilPage-Setup-*.exe` 时 Microsoft Defender SmartScreen 可能显示「Windows 已保护你的电脑」。确认文件来自本仓库 Releases 页后，点击「更多信息」→「仍要运行」继续安装；建议同时按「更新渠道」中的方法用 `SHA256SUMS.txt` 校验安装包。若后续版本启用代码签名，会在发行说明中注明。
 
-The screenshots use sample content and the development interface. The English interface switch is in source and is not included in the current 1.3.10 installer. [View the full workspace on the website](https://foilpage.early-snipe-7202.chatgpt.site/#workspace).
+## 本地使用与云端积分
 
-## Get started
+登录后即可使用本地模型转写，不收取独立软件解锁费，也不扣云端积分。云端整理与标题优化按账户套餐和积分权限执行；自带 API 由对应模型服务商计费。
 
-1. Download FoilPage-Setup from the [latest stable release](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/latest). Supports 64-bit Windows 10 version 1809 and later, or Windows 11. No Python or Node.js installation is required.
-2. Open Setup, sign in with an email code, check the environment, choose your folders, and download a local model.
-3. Add a link or import a recording. Follow it in Tasks, then read the result in Library.
+登录采用邮箱验证码，无需设置密码。邮箱仅用于接收登录验证码、标识账户与归属云端积分权益；本地转写在本机完成，视频与文稿不因本地转写上传。
 
-[Installation, file verification, and browser pairing](https://foilpage.early-snipe-7202.chatgpt.site/#start).
+| 方式 | 金额与额度 | 转写并发 |
+| --- | --- | --- |
+| 本地模型 | 登录后使用，不耗云端积分 | 1 |
+| 标准云端积分 | ¥19.80／500 积分／30 天 | 2 |
+| 专业云端积分 | ¥49.80／2000 积分／30 天 | 4 |
 
-## Website, releases, and help
+云端积分按需单独购买，不自动续费。本地转写与托管云端整理是不同处理路径；开启云端模型或自带 API 时，按界面说明确认相应的数据处理与服务商费用。切换账户不会移动本机视频和文本，云端权益属于对应账户。
+## 浏览器扩展
 
-| You want to… | Start here |
-| :--- | :--- |
-| Explore FoilPage and switch languages | [Product website](https://foilpage.early-snipe-7202.chatgpt.site/) · [简体中文](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh) |
-| Transcribe without installing software | [Browser workspace](https://foilpage.early-snipe-7202.chatgpt.site/app.html) |
-| Download or read published changes | [Releases](https://github.com/Ansel-Poiesis/FoilPage-releases/releases) |
-| Read detailed installation instructions | [Setup guide](docs/guide.md) |
-| Report a problem or suggest an improvement | [Issues](https://github.com/Ansel-Poiesis/FoilPage-releases/issues) |
+首次打开 FoilPage 的「浏览器」页，点击「打开扩展目录」。在 Chrome／Edge 的扩展管理页启用开发者模式，选择「加载已解压的扩展」，加载该固定目录。
 
-The website includes browser-local file transcription. Video downloads, the document library, and article cleanup are Windows app features; the browser tool does not connect to your desktop library. Source code is maintained privately. This repository is the official distribution and feedback entry point.
+默认目录为 `%LOCALAPPDATA%\Programs\FoilPage\browser-extension`（1.3.9 前安装的为 `...\Programs\VideoToArticle\browser-extension`，原地升级不改变原目录）；自定义安装时以 FoilPage 显示的目录为准。1.3.9 起安装目录、程序名（任务管理器中的 FoilPage-Desktop）与数据目录统一为 FoilPage，旧安装升级后自动完成数据迁移，无需手动搬移。随后点击 FoilPage 里的「允许连接」，在两分钟内打开浏览器扩展并完成一键配置。
 
-Use content you are entitled to process and follow the source platforms' terms. Remove private text, account information, keys, and signed media URLs from issue reports. Software and installers © 2026 Ansel-Poiesis. Do not redistribute or bundle installers without permission.
+以后桌面升级会更新同一目录的扩展文件，扩展在任务完成且弹窗关闭后空闲重载，已打开的视频页需刷新。若之前加载了另一份扩展副本，请先改为当前安装目录；没有自重载能力的旧扩展需要手动重载一次。此更新方式不依赖 Chrome 商店。
+
+## Agent 控制
+
+「设置 → Agent 控制」提供完整或只读 MCP 配置，可连接用户的 Agent。安装包随附 CLI，可管理文稿、任务与队列，也可配置模型和转写提示词。保持 FoilPage 运行，驻留托盘时同样可连接；操作结果与应用中的编辑同步。
+
+## 更新渠道
+
+正式版/latest 为 **1.3.11**（[v1.3.11-formal](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.11-formal)）；测试版为 **1.3.5**（[v1.3.5](https://github.com/Ansel-Poiesis/FoilPage-releases/releases/tag/v1.3.5)）。默认更新仅跟随正式版；测试版需要主动选择，不进入正式版的默认更新通知。此前的 1.3.10、1.3.9、1.3.7、1.3.6、1.3.4、1.3.2、1.2.0 与 1.1.0 发行说明只记录各自当时状态。
+
+`v1.4.0-formal` 与 `v1.3.8-formal` 均已撤回并作废（编号不复用，本地构建材料留档）；正式发行现编号为 1.3.9。历史标签与发行资产保留。每次发行均附 `SHA256SUMS.txt`，可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件路径` 校验。
+
+应用中的「设置 → 关于 → 通知与更新」可查看更新记录。问题反馈请提交到 [Issues](https://github.com/Ansel-Poiesis/FoilPage-releases/issues)，附版本、系统与复现步骤。
+
+## 使用边界与版权
+
+下载与转写面向个人学习、备份和整理自己有权使用的内容；请遵守抖音、B 站、YouTube 等来源平台的服务条款及所在地法律，使用行为带来的责任由使用者自行承担。
+
+FoilPage 软件及安装包版权所有 © 2026 Ansel-Poiesis。本仓库为官方发行入口，请勿再分发或捆绑分发安装包；其他事宜可通过 [Issues](https://github.com/Ansel-Poiesis/FoilPage-releases/issues) 联系。
+
+@玩家川行出品
