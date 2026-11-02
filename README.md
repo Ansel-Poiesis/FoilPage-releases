@@ -15,7 +15,7 @@
 
 FoilPage brings video download, on-device transcription, and document editing into one Windows workspace. Start from a supported Douyin, Bilibili, or YouTube link, or import local video and audio. Keep the original transcript and refine a separate draft when you need one.
 
-- **Try it online.** [Transcribe a local recording in your browser](https://foilpage.early-snipe-7202.chatgpt.site/#transcribe), without installation or an account. Whisper Tiny runs on your device; export TXT or SRT. First use downloads the model. Short recordings up to 10 minutes are supported; review the output for errors.
+- **Try it online.** [Open the browser workspace](https://foilpage.early-snipe-7202.chatgpt.site/app.html), without installation. Local transcription needs no account; the account window connects to your existing FoilPage email account. Whisper Tiny runs on your device; export TXT or SRT. First use downloads the model. Short recordings up to 10 minutes are supported; review the output for errors.
 - **Work locally on Windows.** Sign in and transcribe with a downloaded local model. CPU support is included; a matching NVIDIA GPU pack is optional.
 - **Build a useful library.** Search documents, organize them with tags, switch between transcript and edited draft, then edit, copy, or export.
 - **Connect your workflow.** Pair the Chrome / Edge extension, or connect MCP and CLI to the running desktop app.
@@ -42,7 +42,7 @@ The screenshots use sample content and the development interface. The English in
 | You want to… | Start here |
 | :--- | :--- |
 | Explore FoilPage and switch languages | [Product website](https://foilpage.early-snipe-7202.chatgpt.site/) · [简体中文](https://foilpage.early-snipe-7202.chatgpt.site/?lang=zh) |
-| Transcribe without installing software | [Browser transcription](https://foilpage.early-snipe-7202.chatgpt.site/#transcribe) |
+| Transcribe without installing software | [Browser workspace](https://foilpage.early-snipe-7202.chatgpt.site/app.html) |
 | Download or read published changes | [Releases](https://github.com/Ansel-Poiesis/FoilPage-releases/releases) |
 | Read detailed installation instructions | [Setup guide](docs/guide.md) |
 | Report a problem or suggest an improvement | [Issues](https://github.com/Ansel-Poiesis/FoilPage-releases/issues) |
